@@ -1,0 +1,154 @@
+1).package com.xworkz.Programs;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Lowest_Number_List {
+
+	public static void main(String args[]) {
+
+		ArrayList<Integer> arr = new ArrayList<Integer>();
+
+		arr.add(45);
+		arr.add(333);
+		arr.add(76);
+		arr.add(29);
+		arr.add(900);
+		arr.add(23);
+		arr.add(474);
+		arr.add(654);
+		arr.add(29);
+		arr.add(454);
+
+		int n = arr.size();
+
+		System.out.println("ArrayList elements are :");
+
+		for (int i = 0; i < n; i++) {
+			System.out.print(arr.get(i) + " ");
+		}
+
+		System.out.println();
+
+		int max = Collections.max(arr);
+		System.out.println("Maximum is : " + max);
+
+		int min = Collections.min(arr);
+		System.out.println("Minimum is : " + min);
+	}
+}
+
+===============================================================================================
+2) package com.xworkz.Programs;
+
+import java.util.Scanner;
+
+public class Love {
+
+	public static boolean flowersPetals(int flower1Petals, int flower2Petals) {
+		return false;
+
+	}
+
+	public static void main(String[] args) {
+
+		Scanner flower1 = new Scanner(System.in);
+		Scanner flower2 = new Scanner(System.in);
+
+		System.out.print("Enter a number of petals: ");
+		int num1 = flower1.nextInt();
+		int num2 = flower2.nextInt();
+		flowersPetals(num1, num2);
+
+		if (num1 % 2 == 0 && num2 % 2 == 0) {
+			System.out.println("They are not in love");
+		} else {
+			System.out.println("They are in love");
+		}
+	}
+}
+
+
+
+===============================================================================================
+
+
+3)Generalization :
+			Converting a subclass type into a superclass type is called 'Generalization'
+			This is also called up casting. 
+ specialization :It is a top-down design process,it is the revrse process of Generaliztion means 
+ creating new sub class from existing class.
+ 
+ ===============================================================================================
+ 
+4)a)a class cannot be inherited if we make the class as final.we cannot make any changes to the final class.
+
+b)final class defined in java API:
+				String
+				
+				
+c)Interface
+
+===============================================================================================
+5)Sorted collection is :sorted() Method
+		Collection.sort()
+		
+		TreeSet
+
+===============================================================================================
+6)LinkedList:uses nodes.
+			LinkedList internally uses a doubly linked list to store the elements.
+			LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+			LinkedList is better for manipulating data.
+			Manipulation is faster in linkedList.
+			LinkedList has the ref to the previous and next element ref.
+			The location for the elements of a linked list is not contagious.
+			LinkedList implements the doubly linked list of the list interface.
+  ArrayList: ArrayList internally uses a dynamic array to store the elements.
+		   Manipulation with ArrayList is slow because it internally uses an array.
+		   Manipulation is Slower in ArrayList.
+		   An ArrayList class can act as a list only because it implements List only.	
+		   ArrayList is better for storing and accessing data.
+		   The memory location for the elements of an ArrayList is contiguous.
+===============================================================================================
+7)ListIterator():
+			It is present in List.
+			ListIterator traverses both in forward and backward directions
+			java.util.AbstractList.ListIterator
+
+  Iterator():
+			It is present in list and set.
+			Iterator can traverse only in forward direction
+			java.util.ArrayList.iterator
+
+===============================================================================================
+8)Covariant method overriding in java:
+				Covariant method overriding helps to remove type casting on the client-side, 
+				by allowing you to return a subtype of actually return type of overridden method.
+===============================================================================================
+9)Memory leakage:
+			Memory leak is a situation when the garbage collector does not recognize the unused 
+			objects and they remain in the memory indefinitely that reduces the amount of memory allocated. 
+			Because of  the unused objects still being referenced that may lead to OutOfMemoryError. 
+			this is called memeory leakage .
+
+===============================================================================================
+10)static polymorphism:
+			static polymorphism is also called as CompileTime polymorphism
+			Static polymorphism is a type of polymorphism that collects the information to call a method during compile time.
+			and this is also called as method overloading .
+			Multiple method have same name different Parameter is known as method overloading.
+			with the help of method overloading we can achieve CompileTime polymorphism.
+			
+   Dynamic Polymorphism :- 
+	  dynamic polymorphism is a type of polymorphism that collects information to call a method at run time.
+	  this is called as method overriding .
+	  subclass provide a implementation for method inherited is called as Method Overriding.
+	  with the help of method overridden we can achieve run-time polymorphism.
+	  
+===============================================================================================
+11)  She can give security for her programs by making  properties as privite and providing access by setter and 
+getter methos and this also called as encapsulatiom so she can give security for her programs.
+ or she can use the property of the Oops called Abstract calss she can give security .
+
+
